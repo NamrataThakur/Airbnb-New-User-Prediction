@@ -40,3 +40,5 @@ c) Interpretability of the result is not much needed.
 Performance Metric:
 
 NDCG (Normalized discounted cumulative gain) as required by the Kaggle competition.
+
+Read the blog at : https://namrata-thakur893.medium.com/airbnb-new-user-prediction-a-kaggle-case-study-e26e712fe8d2
