@@ -1,0 +1,34 @@
+<html>
+<style>
+.hidden {
+  display: none;
+}
+
+</style>
+
+<body>
+    <h3>Airbnb New User Prediction</h3>
+
+<div>
+  <form action="/predict" method="POST" enctype="multipart/form-data">
+  TRAIN FILE :
+  <input type="file" name="fileToUpload" id="fileToUpload">
+   <br/><br/>
+  SESSION FILE:
+   <input type="file" name="fileToUpload_session" id="fileToUpload_session">
+   <br/><br/>
+  <input type="submit" value="Upload" name="submit">
+  </form>
+</div>
+
+<div id="result_div">
+  <label for="review_text">Top 5 destinations : </label>
+      <label name="review_text">{{result}}</textarea>
+    <br/><br/>
+  <label for="review_text">NDCG Score : </label>
+      <label name="review_text">{{score}}</textarea>
+    <br/><br/>
+</div>
+
+</body>
+</html>
